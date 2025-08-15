@@ -1,0 +1,243 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f5f5f5;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h1 {
+    margin-top: 0;
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 4px;
+    background: #3498db;
+    color: white;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+.ticket-list {
+    margin-top: 20px;
+}
+
+.ticket {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.ticket .left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ticket span {
+    cursor: pointer;
+}
+
+.ticket button {
+    margin-left: 5px;
+    background: transparent;
+    color: #333;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.ticket button:hover {
+    color: #2980b9;
+}
+
+.ticket button:nth-child(3):hover { 
+    color: #2980b9;
+}
+
+.ticket button:nth-child(4):hover { 
+    color: red;
+}
+
+/* Модалки */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+}
+
+.modal-content input,
+.modal-content textarea {
+    width: 100%;
+    margin: 8px 0;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+/* Стили для спиннера */
+.loadingio-spinner-spinner-2by998twmg8 {
+    width: 40px; 
+    height: 40px;
+    display: none; 
+    overflow: hidden;
+    background: #ffffff;
+    margin: 20px auto;
+}
+
+.ldio-yzaezf3dcmj {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: translateZ(0) scale(0.2); 
+    backface-visibility: hidden;
+    transform-origin: 0 0;
+}
+
+.ldio-yzaezf3dcmj div {
+    left: 91px;
+    top: 39px;
+    position: absolute;
+    animation: ldio-yzaezf3dcmj linear 1.8181818181818181s infinite;
+    background: #1c79c0;
+    width: 18px;
+    height: 42px;
+    border-radius: 9px / 18.48px;
+    transform-origin: 9px 61px;
+}
+
+.ldio-yzaezf3dcmj div:nth-child(1) {
+    transform: rotate(0deg);
+    animation-delay: -1.711229946524064s;
+    background: #1c79c0;
+}
+.ldio-yzaezf3dcmj div:nth-child(2) {
+    transform: rotate(21.176470588235293deg);
+    animation-delay: -1.60427807486631s;
+    background: #0dd3ff;
+}
+.ldio-yzaezf3dcmj div:nth-child(3) {
+    transform: rotate(42.35294117647059deg);
+    animation-delay: -1.497326203208556s;
+    background: #0389ff;
+}
+.ldio-yzaezf3dcmj div:nth-child(4) {
+    transform: rotate(63.529411764705884deg);
+    animation-delay: -1.390374331550802s;
+    background: #1c79c0;
+}
+.ldio-yzaezf3dcmj div:nth-child(5) {
+    transform: rotate(84.70588235294117deg);
+    animation-delay: -1.283422459893048s;
+    background: #0dd3ff;
+}
+.ldio-yzaezf3dcmj div:nth-child(6) {
+    transform: rotate(105.88235294117646deg);
+    animation-delay: -1.176470588235294s;
+    background: #0389ff;
+}
+.ldio-yzaezf3dcmj div:nth-child(7) {
+    transform: rotate(127.05882352941177deg);
+    animation-delay: -1.06951871657754s;
+    background: #1c79c0;
+}
+.ldio-yzaezf3dcmj div:nth-child(8) {
+    transform: rotate(148.23529411764707deg);
+    animation-delay: -0.962566844919786s;
+    background: #0dd3ff;
+}
+.ldio-yzaezf3dcmj div:nth-child(9) {
+    transform: rotate(169.41176470588235deg);
+    animation-delay: -0.855614973262032s;
+    background: #0389ff;
+}
+.ldio-yzaezf3dcmj div:nth-child(10) {
+    transform: rotate(190.58823529411765deg);
+    animation-delay: -0.748663101604278s;
+    background: #1c79c0;
+}
+.ldio-yzaezf3dcmj div:nth-child(11) {
+    transform: rotate(211.76470588235293deg);
+    animation-delay: -0.641711229946524s;
+    background: #0dd3ff;
+}
+.ldio-yzaezf3dcmj div:nth-child(12) {
+    transform: rotate(232.94117647058823deg);
+    animation-delay: -0.53475935828877s;
+    background: #0389ff;
+}
+.ldio-yzaezf3dcmj div:nth-child(13) {
+    transform: rotate(254.11764705882354deg);
+    animation-delay: -0.427807486631016s;
+    background: #1c79c0;
+}
+.ldio-yzaezf3dcmj div:nth-child(14) {
+    transform: rotate(275.29411764705884deg);
+    animation-delay: -0.320855614973262s;
+    background: #0dd3ff;
+}
+.ldio-yzaezf3dcmj div:nth-child(15) {
+    transform: rotate(296.47058823529414deg);
+    animation-delay: -0.213903743315508s;
+    background: #0389ff;
+}
+.ldio-yzaezf3dcmj div:nth-child(16) {
+    transform: rotate(317.6470588235294deg);
+    animation-delay: -0.106951871657754s;
+    background: #1c79c0;
+}
+.ldio-yzaezf3dcmj div:nth-child(17) {
+    transform: rotate(338.8235294117647deg);
+    animation-delay: 0s;
+    background: #0dd3ff;
+}
+
+@keyframes ldio-yzaezf3dcmj {
+    0% { opacity: 1 }
+    100% { opacity: 0 }
+}
+
+.ldio-yzaezf3dcmj div { box-sizing: content-box; }
+
+.ticket-list {
+    margin-top: 20px;
+    position: relative;
+}

@@ -1,0 +1,35 @@
+{
+  "name": "helpdesk-backend",
+  "version": "1.1.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack serve --mode development",
+    "deploy": "gh-pages -d dist",
+    "start": "node server.js"
+  },
+  "author": "Netology",
+  "license": "ISC",
+  "engines": {
+    "node": ">=16.0.0 <22.0.0"
+  },
+  "type": "module",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "pino": "^8.17.2",
+    "pino-pretty": "^10.3.1"
+  },
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "gh-pages": "^6.3.0",
+    "html-webpack-plugin": "^5.6.4",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.101.2",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.2"
+  },
+  "keywords": []
+}
